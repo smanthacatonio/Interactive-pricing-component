@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Component</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main class = "wrapper">
+
+        <div>
+            <img src="/assets/bg-pattern.svg" alt="">
+            <img src="" alt="">
+            <header class="pricing-card-header">
+                <h2>Simple, traffic-based pricing</h2>
+                <p>Sign-up for our 30-day trial. No credit card required. </p>
+            </header>
+
+            <form action="" class="pricing-card">
+                <span class="pricing-card-views">100k PAGEVIEWS</span>
+                <input type="range" class="pricing-card-views-range" id="range" 
+                    min="1" max="5" value="3" step="1">
+
+            <div class="pricing-card-pricing-container">
+                <span class="pricing-card-price">$16.00</span>
+                <span class="pricing-card-frequency"> / month</span>
+            </div>
+
+            <label class="pricing-card-frequency-toggle" for="billing-frequency">
+                <span class="pricing-card-freq-option 
+                    pricing-card-freq-monthly"> Monthly Billing</span>
+
+                <input type="checkbox" name="billing-freq" id="billing-freq">
+
+                <div class="toggle">
+                    <span class="toggle-circle"></span>
+                </div>
+
+                <span class="pricing-card-freq-option 
+                        pricing-card-freq-monthly"> Monthly Yearly
+                </span>
+            </label>
+
+            <div class="price-card-bottom">
+                <div class="pricing-card-features">
+                    <span class="pricing-card-features">
+                        <img src="assets/icon-check.svg" alt="mark complete">
+                        <span>Unlimited websites</span>
+                    </span>
+                    <span class="pricing-card-features">
+                        <img src="assets/icon-check.svg" alt="mark complete">
+                        <span>100% data ownership</span>
+                    </span>
+                    <span class="pricing-card-features">
+                        <img src="assets/icon-check.svg" alt="mark complete">
+                        <span>Email reports</span>
+                    </span>
+                </div>
+
+                <button class="pricing-card-submit-btn" type="submit">
+                    Start my trial
+                </button>
+
+            </div>
+            
+
+            
+            </form>
+
+            
+    
+
+
+
+
+
+
+
+
+            <div>
+                <p>    
+                    Challenge by Frontend Mentor. Coded by Your Name Here.</p>
+                </div>
+
+            <script src="./PricingModel.js"></script>
+            <script src="./PricingView.js"></script>
+            <script src="./PricingController.js"></script>
+            
+            <script>
+                let controller = new PricingController();
+            </script>
+
+        </div>    
+    </main> 
+</body>
+</html>
