@@ -37,3 +37,19 @@ The designs were created to the following widths:
 - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
 - Weights: 600, 800 */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@600;800&family=Space+Mono&display=swap');
+
+html{
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding: auto;
+    display: grid;
+    place-items: start center;
+    background: hsl(230, 100%, 99%);
+    background: url(/assets/bg-pattern.svg)no-repeat, #f9faff;
+    background-size: auto 50%;
+}
