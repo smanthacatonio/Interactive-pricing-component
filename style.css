@@ -181,3 +181,74 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: var(--track-br);
     background-image: linear-gradient(to right, #a4f3eb calc(var(--left) * 1%), transparent 0%);
 }
+
+.pricing-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.pricing-card-price {
+    font-weight: 800;
+    font-size: 51.2px;
+    line-height: 70.4px;
+    letter-spacing: -1.28px;
+    color: #293356;
+}
+
+.pricing-card-billing-frequency {
+    font-weight: 600;
+    font-size: 22.4px;
+    line-height: 30.4px;
+    color: #848ead;
+}
+
+#billing-freq{
+    display: none;
+}
+
+.pricing-card-billing-frequency-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19.2px;
+    cursor: pointer;
+    transform: translateX(-9.6px);
+    margin-bottom: 6.4px;
+}
+
+.toggle {
+    width: 70.4px;
+    height: 35.2px;
+    border-radius: 24px;
+    padding: 6.4px;
+    background: #cfd8ef;
+    transition: background 250ms ease-in-out;
+}
+
+.toggle-circle{
+    display: block;
+    height: 35px;
+    width: 35px;
+    background: white;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+#billing-freq:checked ~ .toggle > .toggle-circle{
+    transform: translateX(35.2px);
+}
+
+.pricing-card-billing-frequency-toggle:hover > .toggle, #.pricing-card-billing-frequency-toggle{
+    background: #7aeadf;
+}
+
+.pricing-card-freq-option{
+    font-weight: 600;
+    font-size: 19.2px;
+    line-height: 25.6px;
+    color: #848ead;
+    position: relative;
+}
